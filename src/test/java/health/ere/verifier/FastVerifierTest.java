@@ -32,6 +32,11 @@ public class FastVerifierTest {
         assertTrue(FastVerifier.verify(getClass().getResourceAsStream("/signed-data/HEK_Beispiel_frei_1-null-17.p7b")));
     }
 
+    // @Test
+    // public void testVerifyWithCertificate() {
+    //    assertTrue(FastVerifier.verify(getClass().getResourceAsStream("/signed-data/HEK_Beispiel_frei_1-null-17.p7b"), true));
+    // }
+
     @Test
     public void testVerifyAll() throws IOException {
         try (Stream<Path> paths = Files.walk(Paths.get("src/test/resources/signed-data/"))) {

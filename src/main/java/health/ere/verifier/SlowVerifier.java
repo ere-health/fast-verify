@@ -45,7 +45,7 @@ public class SlowVerifier {
                     "https://10.0.0.98:443/ws/SignatureService");
 
             String connectorTlsCertAuthStorePwd = "N4rouwibGRhne2Fa";
-            FileInputStream certificateInputStream = new FileInputStream("/home/manuel/Desktop/RU-Connector-Cert/no_ec_incentergy.p12");
+            FileInputStream certificateInputStream = new FileInputStream("/home/manuel/Desktop/RU-Connector-Cert/incentergy.p12");
 
             SSLContext sslContext = SSLContext.getInstance("TLS");
 

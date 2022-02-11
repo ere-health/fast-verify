@@ -75,8 +75,8 @@ public class FastVerifier {
 
         // CN=GEM.HBA-qCA24 TEST-ONLY, O=gematik GmbH NOT-VALID, C=DE
         // String url = "https://download-ref.tsl.ti-dienste.de/ECC/ECC-RSA_TSL-ref.xml";
-        String url = "https://download-ref.tsl.ti-dienste.de/TSL-ref.xml";
-
+        // String url = "https://download-ref.tsl.ti-dienste.de/TSL-ref.xml";
+        String url = "https://download-testref.tsl.ti-dienste.de/P-BNetzA/Pseudo-BNetzA-VL.xml";
         final List<TspService> tspServiceList = new TslInformationProvider(
             TslConverter.bytesToTsl(new URL(url).openStream().readAllBytes()).orElseThrow())
             .getTspServices();
